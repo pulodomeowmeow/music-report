@@ -14,7 +14,7 @@ def combine_midi(option , file1 , file2 , en):
 iface = gr.Interface(
     fn=combine_midi,
     inputs=[gr.components.Dropdown(choices=["encrypt", "decrypt"], label="選擇模式",default="encrypt"),gr.components.File(type="file", label="First MIDI File"), gr.components.File(type="file", label="Decrypt File"),gr.components.Textbox(label="Encrypt Content")],
-    outputs=[gr.components.File(label="Combined MIDI File"),gr.components.Label(label="Decrypt Result")]
+    outputs=[gr.components.File(label="Combined MIDI File"),gr.components.Textbox(label="Decrypt Result")]
     ,css="footer{display:none !important}",allow_flagging="never"
 )
 iface.launch(share=True)
