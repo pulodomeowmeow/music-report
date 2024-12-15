@@ -92,6 +92,7 @@ def main(file_name , encryption_file_name):
             text += chr(i + 64)
             
     print(text)
+    return text
     
     
     # print(f"{len(longest_note_array)}, {len(encryption_list)}")
