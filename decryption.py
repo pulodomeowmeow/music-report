@@ -26,10 +26,8 @@ def read_music_parts(file_name) -> list:
     return parts_list
 
 
-def main():
+def main(file_name , encryption_file_name):
     # 解密
-    file_name = str(input("Please enter the key filename: "))
-    encryption_file_name = str(input("Please enter the encrypted filename: "))
     # file_name = "never.mid"
     # encryption_file_name = "output.mid"
 

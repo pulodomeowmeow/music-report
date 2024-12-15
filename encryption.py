@@ -42,9 +42,8 @@ def encrypt_a_part(note_list: list, text_list: list) -> list:
     return new_list
 
 
-def main():
-    file_name = str(input("Please enter the key filename: "))
-    text = str(input("Please enter the text to encrypt: "))
+def main(file_name , text):
+
     text_list = []  # 輸入的ASCII
     for i in text:
         if i == " ":
